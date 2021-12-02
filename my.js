@@ -1,6 +1,6 @@
 function testGS(){
 
-const url = "https://script.google.com/macros/s/AKfycbwn5jbJ2m25l15SvkXuB2nEXmYptouKUsyEyRnOy2p0qpsbsq5guYqYnbdgTVLWE6pZ/exec"; 
+const url = "https://script.google.com/macros/s/AKfycbwiGf5fOqTC8tCY8xcB6WpUeTGgWCYAfL4crp6yn0CrCBRvMl8wI8nlRGIM73mrJMg_/exec"; 
 
 fetch(url)
 .then(d => d.json())
@@ -9,4 +9,25 @@ fetch(url)
 });
 }
 
+function addRow(){
+
+    const url = "https://script.google.com/macros/s/AKfycbwiGf5fOqTC8tCY8xcB6WpUeTGgWCYAfL4crp6yn0CrCBRvMl8wI8nlRGIM73mrJMg_/exec"; 
+    
+    fetch(url,{
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'no-cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'omit', // include, *same-origin, omit
+        headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: JSON.stringify({name:"Shri"}) // body data type must match "Content-Type" header});
+        });
+}
+    
 document.getElementById("btn").addEventListener("click",testGS);
+
+document.getElementById("btn2").addEventListener("click",addRow);
