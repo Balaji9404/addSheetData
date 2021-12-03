@@ -24,7 +24,7 @@ function addRow(){
         },
         redirect: 'follow', // manual, *follow, error
         referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify({Name:"Shri",Mobile:"9560255206"}) // body data type must match "Content-Type" header});
+        body: JSON.stringify({Mobile:"9560255206",Name:"Shri"}) // body data type must match "Content-Type" header});
         });
 }
     
