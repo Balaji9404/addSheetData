@@ -1,6 +1,6 @@
 function testGS(){
 
-const url = "https://script.google.com/macros/s/AKfycbxJDCziNWXyRpFNeDyOiXhc2jwB48nIbzfWNXMJB4mAIzxmIK5P0OeGL_Zv7RyMB-85/exec"; 
+const url = "https://script.google.com/macros/s/AKfycbyMUkAyc6xV8Qlx9KVgGAHwDVX5B8lIX9GQdSYsghon_IjgrpiSmT-Eday5dHNgqKTT/exec"; 
 
 fetch(url)
 .then(d => d.json())
@@ -11,7 +11,7 @@ fetch(url)
 
 function addRow(){
 
-    const url = "https://script.google.com/macros/s/AKfycbxJDCziNWXyRpFNeDyOiXhc2jwB48nIbzfWNXMJB4mAIzxmIK5P0OeGL_Zv7RyMB-85/exec"; 
+    const url = "https://script.google.com/macros/s/AKfycbyMUkAyc6xV8Qlx9KVgGAHwDVX5B8lIX9GQdSYsghon_IjgrpiSmT-Eday5dHNgqKTT/exec"; 
     
     fetch(url,{
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
