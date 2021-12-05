@@ -1,6 +1,6 @@
 function testGS(){
 
-const url = "https://script.google.com/macros/s/AKfycbyMUkAyc6xV8Qlx9KVgGAHwDVX5B8lIX9GQdSYsghon_IjgrpiSmT-Eday5dHNgqKTT/exec"; 
+const url = "https://script.google.com/macros/s/AKfycbynCDgIUWvcXdYdQuh5fLJwh9tNlIzLmbeM3vgQDd3AbFJEpOIDMWS6P2Ej0z16SvDs/exec"; 
 
 fetch(url)
 .then(d => d.json())
@@ -11,7 +11,7 @@ fetch(url)
 
 function addRow(){
 
-    const url = "https://script.google.com/macros/s/AKfycbyMUkAyc6xV8Qlx9KVgGAHwDVX5B8lIX9GQdSYsghon_IjgrpiSmT-Eday5dHNgqKTT/exec"; 
+    const url = "https://script.google.com/macros/s/AKfycbynCDgIUWvcXdYdQuh5fLJwh9tNlIzLmbeM3vgQDd3AbFJEpOIDMWS6P2Ej0z16SvDs/exec"; 
     
     fetch(url,{
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -24,7 +24,7 @@ function addRow(){
         },
         redirect: 'follow', // manual, *follow, error
         referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify({Mobile:"9560255206",Name:"Shri"}) // body data type must match "Content-Type" header});
+        body: JSON.stringify({Mobile:"9560255206",Name:"Shri", Email:"Shari@gmail.com"}) // body data type must match "Content-Type" header});
         });
 }
     
