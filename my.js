@@ -5,7 +5,7 @@ const url = "https://script.google.com/macros/s/AKfycbxJDCziNWXyRpFNeDyOiXhc2jwB
 fetch(url)
 .then(d => d.json())
 .then(d => {
-    document.getElementById("app").textContent = d[0].data;
+    document.getElementById("app").textContent = d[0].status;
 });
 }
 
